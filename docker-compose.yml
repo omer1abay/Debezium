@@ -1,0 +1,6 @@
+services:
+  debezium.example:
+    image: ${DOCKER_REGISTRY-}debeziumexample
+    build:
+      context: .
+      dockerfile: Debezium.Example/Dockerfile
