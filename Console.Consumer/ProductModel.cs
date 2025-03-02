@@ -6,5 +6,5 @@ public record ProductModel
     public Guid Code { get; init; }
     public string Title { get; init; }
     public decimal Price { get; init; }
-    public DateTime CreatedOnUtc { get; init; }
+    public int CreatedOnUtc { get; init; }
 }

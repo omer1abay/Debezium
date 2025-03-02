@@ -4,3 +4,9 @@ services:
     build:
       context: .
       dockerfile: Debezium.Example/Dockerfile
+  console.consumer:
+    image: ${DOCKER_REGISTRY-}consoleconsumer
+    build:
+      context: .
+      dockerfile: Console.Consumer/Dockerfile
+
